@@ -295,7 +295,7 @@
 		 * International standard for romanization by the International Organization for Standardization
 		 * for "Transliteration of Devanagari and related Indic scripts into Latin characters"
 		 */
-		iso: {
+		iso15919: {
 			vowels: ['a', 'ā', 'i', 'ī', 'u', 'ū', 'r̥', 'r̥̄', 'l̥', 'l̥̄', 'ē', 'e', 'ai', 'ō', 'o', 'au'],
 			other_marks: ['ṁ', 'ḥ', 'm̐'],
 			virama: [''],
