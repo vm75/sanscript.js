@@ -7,13 +7,9 @@ Sanscript is a transliteration library for Indian languages. It supports the mos
 This is primarily based on https://github.com/sanskrit/sanscript.js. Some of the fork changes are merged and also some of the logic from https://sanskritdocuments.org/ 
 
 ## Setup
-This project is presently not in npm. Two alternatives are available
+This project is presently not published in npm. Two alternatives are available
 - https://www.npmjs.com/package/@sanskrit-coders/sanscript
 - https://www.npmjs.com/package/sanscript
-~~The package is officially distributed at npm [here](https://www.npmjs.com/package/@sanskrit-coders/sanscript), whereas a variant due to Vikram Iyer is separately available [here](https://www.npmjs.com/package/sanscript). So one can use commands such as:
-
-~~- `npm install @sanskrit-coders/sanscript`
-- `yarn add @sanskrit-coders/sanscript`~~
 
 ## Usage
 
@@ -46,8 +42,6 @@ and the following Roman schemes:
 * `iast` (International Alphabet of Sanskrit Transliteration)
 * `iso15919` (ISO 15919)
 * `itrans` (ITRANS)
-~~* `itrans_dravidian` (ITRANS with support for Dravidian short "e" and "o")~~
-~~* `kolkata` (National Library at Kolkata)~~
 * `slp1` (Sanskrit Library Phonetic Basic)
 * `velthuis` (Velthuis)
 * `wx` (WX)
