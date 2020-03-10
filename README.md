@@ -7,9 +7,10 @@ Sanscript is a transliteration library for Indian languages. It supports the mos
 This is primarily based on https://github.com/sanskrit/sanscript.js. Some of the fork changes are merged and also some of the logic from https://sanskritdocuments.org/ 
 
 ## Setup
-This project is presently not published in npm. Two alternatives are available
-- https://www.npmjs.com/package/@sanskrit-coders/sanscript
-- https://www.npmjs.com/package/sanscript
+The package is distributed at npm [here](https://www.npmjs.com/package/sanscriptjs), whereas the official release could be found [here](https://www.npmjs.com/package/@sanskrit-coders/sanscript). So one can use commands such as:
+
+- `npm install sanscriptjs`
+- `yarn add sanscriptjs`
 
 ## Usage
 
@@ -64,7 +65,7 @@ A **lossy** scheme does not have the letters needed to support lossless translat
 You can tweak the transliteration function by passing an `options` object:
 
 ```
-<script src="node_modules/@sanskrit-coders/sanscript/sanscript.js"></script>
+<script src="node_modules/sanscriptjs/sanscript.js"></script>
 var output = Sanscript.t(input, from, to, options);
 ```
 
@@ -87,4 +88,4 @@ For help in creating `schemeData`, see the comments on the `addBrahmicScheme` an
 We use qunit. Just install the dev dependencies with `yarn` and then open [test/index.html](test/index.html) to see the tests run.
 
 ### Publishing to npm
-~~`npm publish --access public`~~
+`npm publish --access public`
