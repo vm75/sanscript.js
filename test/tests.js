@@ -163,9 +163,17 @@ const data = {
         naraIti    : "ନର ଇତି",
         sentence   : "ଧର୍ମକ୍ଷେତ୍ରେ କୁରୁକ୍ଷେତ୍ରେ ସମଵେତା ଯୁଯୁତ୍ସଵଃ ।",
     },
-    tamil : {
-        short_vowels : "எ ஏ ஒ ஓ",
-        short_marks  : "கெ கே கொ கோ",
+    tamil: {
+        vowels: "அ ஆ இ ஈ உ ஊ ऋ ॠ ऌ ॡ ஏ ஐ ஓ ஔ",
+        short_vowels: "எ ஏ ஒ ஓ",
+        marks: "க கா² கி³ கீ⁴ ஙு சூ ச² ஜ ஜ² ஞ டே டை² டோ³ டௌ⁴ ணஂ தஃ த்²",
+        short_marks: "கெ கே கொ கோ",
+        consonants: "க க² க³ க⁴ ங ச ச² ஜ ஜ² ஞ ட ட² ட³ ட⁴ ண த த² த³ த⁴ ந ப ப² ப³ ப⁴ ம",
+        symbols: "ௐ । ॥ ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯",
+        other: "ய ர ல வ ஶ ஷ ஸ ஹ ள",
+        putra: "புத்ர",
+        naraIti: "நர இதி",
+        sentence: "த⁴ர்மக்ஷேத்ரே குருக்ஷேத்ரே ஸமவேதா யுயுத்ஸவஃ ।",
     },
     telugu : {
         vowels       : "అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఏ ఐ ఓ ఔ",
@@ -424,6 +432,13 @@ QUnit.test("WX to Devanagari", function () {
     const f = transHelper("wx", "devanagari");
     f(from.consonants, to.consonants, "Stops and nasals");
     f(from.symbols, to.symbols, "Symbols and punctuation");
+    textTests(from, to, f);
+});
+
+QUnit.test("Tamil to Devanagari", function () {
+    const from = data.tamil;
+    const to = data.devanagari;
+    const f = transHelper("tamil", "devanagari");
     textTests(from, to, f);
 });
 

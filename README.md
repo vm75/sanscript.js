@@ -4,12 +4,13 @@ Sanscript.js
 ## Introduction
 
 Sanscript is a transliteration library for Indian languages. It supports the most popular Indian scripts and several different romanization schemes. Although Sanscript focuses on Sanskrit transliteration, it has partial support for other languages and is easy to extend.
+This is primarily based on https://github.com/sanskrit/sanscript.js. Some of the fork changes are merged and also some of the logic from https://sanskritdocuments.org/ 
 
 ## Setup
-The package is officially distributed at npm [here](https://www.npmjs.com/package/@sanskrit-coders/sanscript), whereas a variant due to Vikram Iyer is separately available [here](https://www.npmjs.com/package/sanscript). So one can use commands such as:
+The package is distributed at npm [here](https://www.npmjs.com/package/sanscriptjs), whereas the official release could be found [here](https://www.npmjs.com/package/@sanskrit-coders/sanscript). So one can use commands such as:
 
-- `npm install @sanskrit-coders/sanscript`
-- `yarn add @sanskrit-coders/sanscript`
+- `npm install sanscriptjs`
+- `yarn add sanscriptjs`
 
 ## Usage
 
@@ -32,6 +33,7 @@ of which the following are Roman schemes:
 
 * `hk` (Harvard-Kyoto)
 * `iast` (International Alphabet of Sanskrit Transliteration)
+* `iso15919` (ISO 15919)
 * `itrans` (ITRANS)
 * `itrans_dravidian` (ITRANS with support for Dravidian short "e" and "o")
 * `kolkata` (National Library at Kolkata)
@@ -62,7 +64,7 @@ A **lossy** scheme does not have the letters needed to support lossless translat
 You can tweak the transliteration function by passing an `options` object:
 
 ```html
-<script src="node_modules/@sanskrit-coders/sanscript/sanscript.js"></script>
+<script src="node_modules/sanscriptjs/sanscript.js"></script>
 <script>
   var output = Sanscript.t(input, from, to, options);
 </script>
