@@ -38,10 +38,10 @@ async function main () {
         );
         out.write("const schemes = {};\n");
         for (const [scheme, contents] of bfiles) {
-            out.write(`schemes.${scheme} = ${contents.toString().trim()};\n`);
+            out.write(`// Scheme for ${scheme}\n${contents.toString().trim()};\n`);
         }
         for (const [scheme, contents] of rfiles) {
-            out.write(`schemes.${scheme} = ${contents.toString().trim()};\n`);
+            out.write(`// Scheme for ${scheme}\n${contents.toString().trim()};\n`);
         }
         // Write the code to the output file
         out.write(await fsp.readFile(
